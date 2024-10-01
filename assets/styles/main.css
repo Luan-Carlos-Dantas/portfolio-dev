@@ -42,7 +42,7 @@ main{
       justify-content: center;
       gap: .8rem;
       padding: .8rem 1.6rem;
-      border-radius: 50px;
+      border-radius: 50rem;
       background-color: var(--base-gray-300);
       cursor: pointer;
 
