@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Maven+Pro:wght@400..900&display=swap');
+
+:root{
+  font-size: 62.5%;
+  --title-font-family: 'Asap', sans-serif;
+  --title-lg: 5.6rem;
+  --title-md: 2.4rem;
+  --title-sm: 1.6rem;
+  --subtitle-font-family: 'Inconsolata', sans-serif;
+  --subtitle-size: 2rem;
+  --text-font-family: 'Maven Pro', sans-serif;
+  --text-md: 1.6rem;
+  --text-sm: 1.4rem;
+  --primary-red: #E3646E;
+  --primary-purple: #BB72E9;
+  --primary-blue: #3996DB;
+  --primary-green: #82BC4F;
+  --primary-yellow: #EABD5F;
+  --base-gray-100:#0D0E11;
+  --base-gray-200:#16181D;
+  --base-gray-300:#292C34;
+  --base-gray-400:#878EA1;
+  --base-gray-500:#C0C4CE;
+  --base-gray-600:#E2E4E9;
+}
+
+*,
+html,
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  background-color: var(--base-gray-200);
+  font-family: var(--text-font-family);
+  font-weight: 500;
+  line-height: 140%;
+  color: var(--base-gray-400);
+  font-size: var(--text-sm);
+  max-width: 100vw;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper{
+  padding-inline: 12rem;
+  margin-block: 7.2rem 14.4rem;
+}
+
+.title-lg, .title-md, .title-sm{
+  font-family: var(--title-font-family);
+  line-height: 120%;
+  font-weight: 900;
+  color: var(--base-gray-600);
+}
+
+.title-lg{
+  font-size: var(--title-lg);
+}
+
+.title-sm{
+  font-size: var(--title-sm);
+}
+
+.title-md{
+  font-size: var(--title-md);
+}
+
+.subtitle{
+  font-family: var(--subtitle-font-family);
+  font-size: var(--subtitle-size);
+  line-height: 120%;
+  font-weight: 500;
+  color: var(--base-gray-500);
+}
+
+.highlight{
+  color: var(--primary-red);
+}
+
+.cards-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.4rem;
+
+  & .card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--base-gray-300);
+    border: none;
+    border-radius: 12px;
+    padding: 1.2rem 1.7rem 1.2rem 1.7rem;
+    cursor: pointer;
+
+    & .card-img{
+      border-radius: 8px;
+    }
+
+    & .card-body{
+      display: grid;
+      gap: .8rem;
+    }
+
+    &:hover{
+      outline: .2rem solid var(--base-gray-500);
+    }
+  }
+
+}

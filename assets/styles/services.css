@@ -1,0 +1,22 @@
+#services{
+  background-color: var(--base-gray-100);
+  display: grid;
+  gap: 5.6rem;
+
+  & .wrapper{
+    display: grid;
+    gap: 5.6rem;
+  }
+
+  & .intro-services{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+  }
+
+  & .card{
+    background-color: inherit;
+  }
+
+}
